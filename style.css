@@ -12,10 +12,12 @@ body {
 
 /* Hero Section */
 .hero {
+   .hero {
     height: 100vh;
-    background: url("images/duck.jpg") center/cover no-repeat;
-    background:url("images/fly.jpg") center/cover no-repeat;
+    background: url("duck.jpg") center / cover no-repeat;
     position: relative;
+}
+
 }
 
 .overlay {
@@ -107,4 +109,5 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
 }
+
 
