@@ -13,7 +13,8 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url("images/duck.jpg.jpg") center/cover no-repeat;
+    background: url("images/duck.jpg") center/cover no-repeat;
+    background:url("images/fly.jpg") center/cover no-repeat;
     position: relative;
 }
 
@@ -106,3 +107,4 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
 }
+
