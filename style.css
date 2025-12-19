@@ -2,109 +2,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #f4f6f8;
-    color: #222;
+    background-color: #f4f6f5;
+    color: #333;
 }
 
-/* Header */
-.header {
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url("duck.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 15px 25px;
-    background: #111;
-    color: #fff;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-.logo-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.overlay h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
 }
 
-.logo-box img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #fff;
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
 }
 
-.insta-btn {
-    background: #e1306c;
-    color: #fff;
-    padding: 8px 14px;
+.btn {
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    background: #2ecc71;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-.insta-btn:hover {
-    opacity: 0.85;
+.btn:hover {
+    background: #27ae60;
 }
 
 /* About */
 .about {
+    padding: 60px 15%;
     text-align: center;
-    padding: 40px 20px;
 }
 
 .about h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
 
 .about p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 16px;
-}
-
-.credit {
-    margin-top: 12px;
-    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 /* Gallery */
 .gallery {
+    padding: 60px 10%;
+    background: #fff;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-.img-box {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.img-box img {
+.gallery-grid img {
     width: 100%;
-    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
 }
 
-.watermark {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    padding: 4px 8px;
-    font-size: 12px;
-    border-radius: 4px;
+.gallery-grid img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
     background: #111;
-    color: #fff;
-    margin-top: 30px;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
-
